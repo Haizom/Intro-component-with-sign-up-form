@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="container">
+      <div class="intro">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+
+      <div class="sign-up">
+        <p class="forum-title"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <form action="">
+          <div class="error-input">
+            <input id="fname" type="text" placeholder="First Name">
+            <img src="images/icon-error.svg" alt="error">
+            <p class="error-msg">First name cannot be empty</p>
+          </div>
+          <div class="error-input">
+            <input id="lname"  type="text" placeholder="Last Name">
+            <img src="images/icon-error.svg" alt="error">
+            <p class="error-msg">Last name cannot be empty</p>
+          </div>
+          <div class="error-input">
+            <input id="email"  type="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" alt="error">
+            <p class="error-msg">Looks like this is not an email</p>
+          </div>
+          <div class="error-input">
+            <input id="password" type="password" placeholder="Password">
+            <img src="images/icon-error.svg" alt="error">
+            <p class="error-msg">Password cannot be empty</p>
+          </div>
+          
+          <button type="submit">Claim your free trial</button>
+          <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>  
+    </div>
+  </div>
+
+  <script src="script.js"></script>i
+</body>
+</html>

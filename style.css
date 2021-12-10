@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url("images/bg-intro-desktop.png");
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 900px;
+    margin: 15vh auto;
+    padding: 2em;
+    height: auto;
+    
+}
+
+.title{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.paragraph{
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.forum-title{
+    color: #fff;
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    font-size: .8rem;
+    box-shadow: 0px 9px 4px -3px rgba(0,0,0,0.28);
+}
+
+.forum-title span{
+    font-weight: 600;
+}
+
+form{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.error-input{
+    position:relative;
+
+}
+
+.error-input img{
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    display: none;
+}
+
+.error-state{
+    position:relative;
+}
+.error-state img{
+    position: absolute;
+    top: 15%;
+    left: 87%;
+    display: block;
+}
+
+.error-msg{
+    font-size: 0.6rem;
+    color: red;
+    text-align: right;
+    display: none;
+}
+
+.error-state p{
+    font-size: 0.6rem;
+    color: red;
+    text-align: right;
+    display: block;
+}
+
+.error-state input{
+    outline: none;
+    border: rgb(255, 0, 0) 2px solid;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(161, 161, 161);
+}
+
+input:focus{
+    outline: none;
+    border: black 2px solid;
+}
+
+
+
+button {
+    color: #fff;
+    font-weight: 500;
+    text-transform:uppercase;
+    width: 100%;
+    padding: .8rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+}
+button:hover{
+    background-color: hsl(154, 63%, 62%);
+    cursor: pointer;;
+}
+
+.terms{
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: rgb(168, 166, 173) ;
+}
+
+.terms span{
+    color: red;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 450px;
+      margin: 5vh auto;
+      text-align: center;
+    }
+  }
+
+
+
+
+
